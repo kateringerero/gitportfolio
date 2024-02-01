@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&display=swap');
+  </style>
+<body>
+    
+    
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2></h2>
+            <p>As an aspiring web developer and IT student, I've developed a strong foundation in languages like
+                <span class="highlight">Python</span>,
+                <span class="highlight">Kotlin</span>,
+                <span class="highlight">Java</span>, 
+                <span class="highlight">HTML</span>,
+                <span class="highlight">CSS</span>, and
+                <span class="highlight">JavaScript</span>.
+            </p>
+            <p>Recently, I've expanded my skill set to include <span class="highlight">PHP</span> and <span class="highlight">Laravel</span>, enhancing my capabilities in backend development.</p>
+            <p>My academic projects reflect a practical application of these skills, laying the groundwork for a promising career in the ever-evolving field of web development.</p>
+        <p>
+            <a href="#projects"><button>Let's dig in to my Portfolio</button></a>
+        </section> 
+    
+
+    <!-- Navbar Section -->
+        <nav id="navbar">
+            <div class="logo"><a href="index.html"><img src="images/kat.png"></a></div>
+            <button id="nav-toggle" aria-label="Toggle Navigation">&#9776;</button>
+            <ul id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="carousel">
+                <div class="carousel-item" onclick="showToast('Tasked with designing a responsive website utilizing HTML and CSS, this project encapsulates the application of skills and concepts acquired over the semester, focusing on adaptable layouts for various devices.')">
+                    <img src="D:\Portfolio\images\pns.png" alt="Project 1">
+                    <div class="carousel-item-details">
+                        <h3>Payak Ngunit Stylish Clothing Website</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="showToast('Guess the Color is an interactive Java-based game where players deduce the correct color through a series of hints, showcasing programming skills and logical thinking.')">
+                    <img src="D:\Portfolio\images\guess.png" alt="Project 1">
+                    <div class="carousel-item-details">
+                        <h3>Guess the Color</h3>
+                        <p>Java</p>
+                    </div>
+                </div>
+                <div class="carousel-item" onclick="showToast('A comprehensive project uniting three subjects, this endeavor involves developing a fully-functional Android application using Kotlin and integrating a database, with a key focus on project management and collaborative leadership.')">
+                    <img src="D:\Portfolio\images\ram.png" alt="Project 1">
+                    <div class="carousel-item-details">
+                        <h3>Registrar Appointment Manager</h3>
+                        <p>PHP, HTML, CSS, JavaScript, Kotlin</p>
+                    </div>
+                </div>
+            <div id="toast"></div>
+            </div>
+
+            <p><a href="#contact"><button>Have questions? Hit me up</button></a></p>
+            
+        </section>
+    
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media.</p>
+            <form action="#" method="post"> 
+                <div class="form-group">
+                    <input placeholder="Name" type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="form-group">
+                    <input placeholder="Email Address" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message"  id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <footer>
+                <i class="mdi mdi-chevron-double-up page-link" dest="index"></i>
+                <div class="footer-left">
+                    <p>Katherine Guerrero</p>
+                </div>
+                <div class="footer-center">
+                    <a href="https://www.facebook.com/KthrnGrrr/" target="_blank"><img width="64" height="64" src="https://img.icons8.com/arcade/64/facebook.png" alt="facebook"/></a>
+                    <a href="spicygatito" target="_blank"><img width="64" height="64" src="https://img.icons8.com/arcade/64/github.png" alt="github"/></a>
+                    <a href="https://github.com/kateringerero" target="_blank"><img width="64" height="64" src="https://img.icons8.com/arcade/64/linkedin.png" alt="linkedin"/></a>
+                </div>
+                <div class="footer-right">
+                    <p><a href="index.html">Copyright &copy; 2024 Guerrero. All rights reserved.</a></p>
+                </div>
+            </footer>
+        </section>
+    </main>
+        
+    <script src="script.js"></script>
+</body>
+</html>
